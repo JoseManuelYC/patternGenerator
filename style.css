@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ababab;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: black;
+  height: calc(15vmin * 5);
+  width: calc(15vmin * 4);
+  padding: 15px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(90, 90, 100, 0.4);
+}
+
+.container div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: aliceblue;
+  letter-spacing: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+  height: 30px;
+}
+button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.quad-circle-1 {
+  clip-path: circle(100% at 0 0);
+}
+.quad-circle-2 {
+  clip-path: circle(100% at 100% 0);
+}
+.quad-circle-3 {
+  clip-path: circle(100% at 100% 100%);
+}
+.quad-circle-4 {
+  clip-path: circle(100% at 0 100%);
+}
+
+.triangle-1 {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%);
+}
+.triangle-2 {
+  clip-path: polygon(0 0%, 100% 0%, 100% 100%);
+}
+.triangle-3 {
+  clip-path: polygon(0 100%, 100% 0%, 100% 100%);
+}
+.triangle-4 {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.circle {
+  border-radius: 50%;
+}
